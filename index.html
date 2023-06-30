@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeris</title>
+
+    <!-- Remix Icon cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Custom font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Mobile Search Form -->
+            <form class="search-mobile" id="search-mobile">
+                <label for="search-mobile__input" class="visually-hidden">Search (Mobile)</label>
+                <input type="text" name="search-form" id="search-mobile__input" class="input search-mobile__input" placeholder="Please enter a city...">
+                <button class="search-btn search-mobile__btn" aria-label="Search">
+                    <i class="ri-search-line search-mobile__icon"></i>
+                </button>
+            </form>
+
+            <!-- Search Form -->
+            <form id="search-form" class="search-form">
+                <label for="search-form__input" class="visually-hidden">Search</label>
+                <input type="text" name="" id="search-form__input" class="input search-form__input" placeholder="Please enter a city...">
+                <button class="btn search-form__btn">Search</button>
+            </form>
+        </header>
+
+        <main>
+            <!-- Details -->
+            <section class="details">
+                <div class="location">
+                    <i class="ri-map-pin-line details__icon"></i>
+                    <span class="location__text">Lagos, Nigeria</span>
+                </div>
+                <div class="time">
+                    <i class="ri-time-line details__icon"></i>
+                    <span class="time__text">Monday, 10:56pm</span>
+                </div>
+            </section>
+
+            <!-- Weather Condition -->
+            <section class="weather">
+                <p class="weather__temp">19°C</p>
+                <img src="media/icon.png" alt="weather-condition" class="weather__icon">
+                <div class="condition">
+                    <p>
+                        <span class="condition__title">Precipitation:</span>
+                        <span id="precipitation">14%</span>
+                    </p>
+                    <p>
+                        <span class="condition__title">Humidity:</span>
+                        <span id="humidity">73%</span>
+                    </p>
+                    <p>
+                        <span class="condition__title">Wind:</span>
+                        <span id="wind">14%</span>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Description -->
+            <section class="description">
+                <img src="media/icon.png" alt="" class="description__icon">
+                <span class="description__text">Sky is clear tommorrow</span>
+            </section>
+
+            <!-- Forecast -->
+            <section class="forecast">
+                <div class="weather-forecast">
+                    <p class="weather-forecast__day">Tuesday</p>
+                    <img src="media/icon.png" alt="" class="weather-forecast__icon">
+                    <p class="weather-forecast__temp">
+                        <span class="max">21°</span>
+                        <span class="min">16°</span>
+                    </p>
+                </div>
+                <div class="weather-forecast">
+                    <p class="weather-forecast__day">Tuesday</p>
+                    <img src="media/icon.png" alt="" class="weather-forecast__icon">
+                    <p class="weather-forecast__temp">
+                        <span class="max">21°</span>
+                        <span class="min">16°</span>
+                    </p>
+                </div>
+                <div class="weather-forecast">
+                    <p class="weather-forecast__day">Tuesday</p>
+                    <img src="media/icon.png" alt="" class="weather-forecast__icon">
+                    <p class="weather-forecast__temp">
+                        <span class="max">21°</span>
+                        <span class="min">16°</span>
+                    </p>
+                </div>
+                <div class="weather-forecast">
+                    <p class="weather-forecast__day">Tuesday</p>
+                    <img src="media/icon.png" alt="" class="weather-forecast__icon">
+                    <p class="weather-forecast__temp">
+                        <span class="max">21°</span>
+                        <span class="min">16°</span>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <small><a href="https://github.com/Owanate/Atmosphere" target="_blank">Open-source code</a>, by Owanate</small>
+        </footer>
+    </div>
+</body>
+</html>
