@@ -32,7 +32,7 @@
             <form id="search-form" class="search-form">
                 <label for="search-form__input" class="visually-hidden">Search</label>
                 <input type="text" name="" id="search-form__input" class="input search-form__input" placeholder="Please enter a city...">
-                <button class="btn search-form__btn">Search</button>
+                <button class="search-btn search-form__btn">Search</button>
             </form>
         </header>
 
@@ -41,80 +41,50 @@
             <section class="details">
                 <div class="location">
                     <i class="ri-map-pin-line details__icon"></i>
-                    <span class="location__text">Lagos, Nigeria</span>
+                    <span class="location__text" id="city"></span>
                 </div>
                 <div class="time">
                     <i class="ri-time-line details__icon"></i>
-                    <span class="time__text">Monday, 10:56pm</span>
+                    <span class="time__text" id="date"></span>
                 </div>
             </section>
 
             <!-- Weather Condition -->
             <section class="weather">
-                <p class="weather__temp">19°C</p>
-                <img src="media/icon.png" alt="weather-condition" class="weather__icon">
+                <p class="weather__temp" id="temp"></p>
+                <img src="" alt="weather-condition" class="weather__icon">
                 <div class="condition">
                     <p>
-                        <span class="condition__title">Precipitation:</span>
-                        <span id="precipitation">14%</span>
+                        <span class="condition__title">Pressure:</span>
+                        <span id="pressure"></span>
                     </p>
                     <p>
                         <span class="condition__title">Humidity:</span>
-                        <span id="humidity">73%</span>
+                        <span id="humidity"></span>
                     </p>
                     <p>
                         <span class="condition__title">Wind:</span>
-                        <span id="wind">14%</span>
+                        <span id="wind"></span>
                     </p>
                 </div>
             </section>
 
             <!-- Description -->
             <section class="description">
-                <img src="media/icon.png" alt="" class="description__icon">
-                <span class="description__text">Sky is clear tommorrow</span>
+                <img src="" alt="" class="description__icon">
+                <span class="description__text" id="desc"></span>
             </section>
 
             <!-- Forecast -->
-            <section class="forecast">
-                <div class="weather-forecast">
-                    <p class="weather-forecast__day">Tuesday</p>
-                    <img src="media/icon.png" alt="" class="weather-forecast__icon">
-                    <p class="weather-forecast__temp">
-                        <span class="max">21°</span>
-                        <span class="min">16°</span>
-                    </p>
-                </div>
-                <div class="weather-forecast">
-                    <p class="weather-forecast__day">Tuesday</p>
-                    <img src="media/icon.png" alt="" class="weather-forecast__icon">
-                    <p class="weather-forecast__temp">
-                        <span class="max">21°</span>
-                        <span class="min">16°</span>
-                    </p>
-                </div>
-                <div class="weather-forecast">
-                    <p class="weather-forecast__day">Tuesday</p>
-                    <img src="media/icon.png" alt="" class="weather-forecast__icon">
-                    <p class="weather-forecast__temp">
-                        <span class="max">21°</span>
-                        <span class="min">16°</span>
-                    </p>
-                </div>
-                <div class="weather-forecast">
-                    <p class="weather-forecast__day">Tuesday</p>
-                    <img src="media/icon.png" alt="" class="weather-forecast__icon">
-                    <p class="weather-forecast__temp">
-                        <span class="max">21°</span>
-                        <span class="min">16°</span>
-                    </p>
-                </div>
-            </section>
+            <section class="forecast"></section>
         </main>
 
         <footer>
             <small><a href="https://github.com/Owanate/Atmosphere" target="_blank">Open-source code</a>, by Owanate</small>
         </footer>
     </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="src/index.js"></script>
 </body>
 </html>
