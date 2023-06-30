@@ -8,7 +8,7 @@ Aeris solves the challenge of getting accurate and personalized weather forecast
 ![The design for the project](/media/screenshot.jpeg)
 
 ### Links
-- [Live Site URL:]()
+- [Live Site URL](https://aerisapp.netlify.app/)
 
 ## My Process
 Skyline is built using HTML, CSS, and Vanilla JavaScript. The app is structured using the CSS architecture BEM(Block Element Model). It is a fully responsive web application that works on desktop and mobile devices.
